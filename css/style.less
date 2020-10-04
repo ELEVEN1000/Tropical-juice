@@ -1,0 +1,66 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    }
+
+a {
+    text-decoration: none;
+    outline: none;
+    }
+
+img {
+    display: block;
+    width: 100%;
+    }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+    line-height: 1;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+    } 
+
+
+//blocks
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/social";
+@import "blocks/footer";
+@import "blocks/burger";
